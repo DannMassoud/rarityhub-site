@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RarityHub — Know what your collection is really worth</title>
+<meta name="description" content="RarityHub tracks real completed sales across marketplaces and computes honest market values for designer toys, trading cards, sneakers, LEGO and more — with a confidence score, never an invented number.">
+<style>
+  :root {
+    --bg: #0e0f13;
+    --panel: #16181f;
+    --text: #e8e6e1;
+    --muted: #9a9790;
+    --accent: #e8b64c;
+    --line: #262933;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-weight: 800; font-size: 1.25rem; letter-spacing: 0.02em; }
+  .logo span { color: var(--accent); }
+  .hero { padding: 72px 0 56px; }
+  .hero h1 { font-size: clamp(2rem, 5.5vw, 3.4rem); line-height: 1.15; font-weight: 800; max-width: 720px; }
+  .hero h1 em { color: var(--accent); font-style: normal; }
+  .hero p.sub { margin-top: 20px; font-size: 1.15rem; color: var(--muted); max-width: 620px; }
+  .badge {
+    display: inline-block; margin-top: 28px; padding: 8px 16px; border: 1px solid var(--line);
+    border-radius: 999px; color: var(--muted); font-size: 0.9rem; background: var(--panel);
+  }
+  .cats { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .cats span {
+    padding: 6px 14px; border-radius: 999px; background: var(--panel);
+    border: 1px solid var(--line); font-size: 0.88rem; color: var(--text);
+  }
+  section.how { padding: 30px 0 10px; }
+  h2 { font-size: 1.5rem; margin-bottom: 22px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+  .step {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px;
+  }
+  .step .n { color: var(--accent); font-weight: 800; font-size: 0.9rem; letter-spacing: 0.08em; }
+  .step h3 { margin: 8px 0 8px; font-size: 1.05rem; }
+  .step p { color: var(--muted); font-size: 0.95rem; }
+  .honesty {
+    margin: 48px 0; padding: 28px; border-left: 3px solid var(--accent);
+    background: var(--panel); border-radius: 0 14px 14px 0;
+  }
+  .honesty p { font-size: 1.05rem; }
+  .honesty p strong { color: var(--accent); }
+  footer {
+    margin-top: 64px; padding: 32px 0 48px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 16px;
+    align-items: center; justify-content: space-between;
+  }
+  footer a { color: var(--muted); }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #faf8f4; --panel: #ffffff; --text: #1c1b18; --muted: #6b6960; --line: #e4e1da; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Rarity<span>Hub</span></div>
+    </header>
+
+    <div class="hero">
+      <h1>Know what your collection is <em>really</em> worth.</h1>
+      <p class="sub">Live market values for collectables — computed from real completed
+      sales across marketplaces, never from asking prices or guesswork.</p>
+      <div class="badge">📱 App in development — launching soon</div>
+      <div class="cats">
+        <span>Designer toys</span><span>Trading cards</span><span>Sneakers</span>
+        <span>LEGO</span><span>Watches</span><span>Signed memorabilia</span>
+      </div>
+    </div>
+
+    <section class="how">
+      <h2>How the price index works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="n">01</div>
+          <h3>Track real sales</h3>
+          <p>We collect completed sales — items that actually sold, with real prices and
+          dates — from eBay and other marketplaces worldwide.</p>
+        </div>
+        <div class="step">
+          <div class="n">02</div>
+          <h3>Filter the noise</h3>
+          <p>Scam listings, dreamer prices and mismatched items are trimmed out.
+          Recent sales count for more than old ones.</p>
+        </div>
+        <div class="step">
+          <div class="n">03</div>
+          <h3>One honest value</h3>
+          <p>Every item gets a single market value with a confidence score, backed by
+          the number of real sales behind it.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="honesty">
+      <p><strong>Honesty is the product.</strong> When there isn't enough real data to
+      value an item, RarityHub says "insufficient data" — we never invent a number.
+      Items you find through RarityHub link straight to the marketplace listing, so you
+      buy where the market actually is.</p>
+    </div>
+
+    <footer>
+      <div>© 2026 RarityHub</div>
+      <div>
+        <a href="mailto:danielkmassoud@gmail.com">Contact</a> ·
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
